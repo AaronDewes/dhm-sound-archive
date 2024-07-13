@@ -25,7 +25,7 @@
             class="w-[70vw] md:w-[23vw] mx-auto inline md:mx-[1vw] mb-1 md:mb-0"
             controls
             preload="metadata"
-            :src="`/sounds/${team.sound}`"
+            :src="`/dhm-2024-sound-archive/sounds/${team.sound}`"
             :title="team.name"
             :id="`audio-${team.name}`"
           ></audio>
