@@ -51,7 +51,7 @@ jobs:
       - name: Install dependencies
         run: npm i
       - name: Static HTML export with Nuxt
-        run: NUXT_APP_BASE_URL=/dhm-2024-sound-archive/ npm run generate
+        run: BASE_URL=/dhm-2024-sound-archive/ npm run generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
