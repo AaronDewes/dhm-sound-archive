@@ -64,8 +64,8 @@ const teams = [
     "notes": ""
   },
   {
-    "name": "e202+u",
-    "sound": "e202+u.mp3",
+    "name": "‮u+202e",
+    "sound": "‮u+202e.mp3",
     "notes": ""
   },
   {
