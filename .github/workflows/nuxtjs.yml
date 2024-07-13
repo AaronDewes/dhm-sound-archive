@@ -49,7 +49,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
-        run: NUXT_APP_BASE_URL=/dhm-2024-sound-archive/ npm i
+        run: BASE_URL=/dhm-2024-sound-archive/ npm i
       - name: Static HTML export with Nuxt
         run: npm run generate
       - name: Upload artifact
