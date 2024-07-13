@@ -25,7 +25,7 @@
             class="w-[70vw] md:w-[23vw] mx-auto inline md:mx-[1vw] mb-1 md:mb-0"
             controls
             preload="metadata"
-            :src="`/dhm-2024-sound-archive/sounds/${team.sound}`"
+            :src="`${baseURL}sounds/${team.sound}`"
             :title="team.name"
             :id="`audio-${team.name}`"
           ></audio>
@@ -33,7 +33,7 @@
       </div>
     </div>
     
-    <button @click="playAll" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <button @click="playAll" class="text-[10rem]">
         💥
     </button>
 
@@ -131,5 +131,9 @@ function playAll() {
     audio.play();
   });
 }
+
+const config = useRuntimeConfig();
+
+const baseURL = config.app.baseURL;
 
 </script>
