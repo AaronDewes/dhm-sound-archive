@@ -1,7 +1,7 @@
 <template>
   <div>
     <Head>
-      <Title>DHM 2024 Sound Archive</Title>
+      <Title>DHM Sound Archive</Title>
       <Link rel="icon" type="image/svg+xml" href="./logo.webp" />
     </Head>
     <NuxtLayout>
@@ -9,3 +9,6 @@
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+</style>
