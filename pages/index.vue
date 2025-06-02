@@ -2,25 +2,39 @@
   <div
     class="min-h-screen min-w-screen dark:bg-gray-800 dark:text-white flex items-center justify-center flex-col"
   >
-    <h1 class="text-4xl font-bold mb-4 mt-4">DHM Sound Archive</h1>
+    <div class="flex items-center justify-center py-6">
+      <h1 class="text-4xl font-bold mb-4 mt-4">DHM Sound Archive</h1>
+
+      <select
+        v-model="selectedYear"
+        class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl py-2 px-4 mx-4 my-4"
+      >
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select>
+    <button
+      @click="playAll"
+      class="text-5xl cursor-pointer"
+      v-if="teams[selectedYear].length > 0"
+    >
+      💥
+    </button>
+    </div>
 
     <p
-      class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4"
+      class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4 mb-8"
+      v-if="teams[selectedYear].length > 0"
     >
       Disclaimer: I don&#39;t own the copyright to any of these sounds. Use at
       your own risk. <br />
       If you want your sound removed or want to change anything about your
       sounds, contact me on Discord.
     </p>
-    <select
-      v-model="selectedYear"
-      class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4 my-4"
-    >
-      <option value="2024">2024</option>
-      <option value="2025">2025</option>
-    </select>
     <div class="flex my-4 flex-col gap-2">
-      <div class="hidden md:flex flex-row gap-2">
+      <div
+        class="hidden md:flex flex-row gap-2"
+        v-if="teams[selectedYear].length > 0"
+      >
         <h2 class="font-bold text-xl w-[25vw] text-center">Team</h2>
         <h2 class="font-bold text-xl w-[25vw] text-center">Sound</h2>
         <h2 class="font-bold text-xl w-[25vw] text-center">Notes</h2>
@@ -56,17 +70,17 @@
       </div>
     </div>
 
-    <button @click="playAll" class="text-[10rem]">💥</button>
-
-    <span class="mt-2"
-      >Inspired by
-      <a
-        class="underline cursor-pointer"
-        href="https://outsparkled.github.io/dhm-2024-sound-archive/"
-        >the DHM 2024 sound archive by @outsparkled</a
-      >.</span
-    >
-    <span class="mt-1 mb-2">Made by @AaronDewes.</span>
+    <footer class="flex flex-col gap-2 items-center justify-center mt-8">
+      <span class="mt-2"
+        >Inspired by
+        <a
+          class="underline cursor-pointer"
+          href="https://outsparkled.github.io/dhm-2024-sound-archive/"
+          >the DHM 2024 sound archive by @outsparkled</a
+        >.</span
+      >
+      <span class="mt-1 mb-2">Made by @AaronDewes.</span>
+    </footer>
   </div>
 </template>
 
