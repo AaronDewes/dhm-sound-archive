@@ -2,7 +2,7 @@
   <div
     class="min-h-screen min-w-screen dark:bg-gray-800 dark:text-white flex items-center justify-center flex-col"
   >
-    <h1 class="text-4xl font-bold mb-4 mt-4">DHM 2024 Sound Archive</h1>
+    <h1 class="text-4xl font-bold mb-4 mt-4">DHM Sound Archive</h1>
 
     <p
       class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4"
