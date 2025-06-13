@@ -164,7 +164,18 @@ const teams = {
       notes: "",
     },
   ],
-  2025: [],
+  2025: [
+    /*{
+      name: ":(){ :|:& };:",
+      sound: ":(){ :|:& };:.mp3",
+      notes: "",
+    },
+    {
+      name: "Holzhelm",
+      sound: "holzhelm.mp3",
+      notes: "",
+    }*/
+  ],
 };
 
 function playAll() {
