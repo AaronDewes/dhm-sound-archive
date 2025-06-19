@@ -12,13 +12,13 @@
         <option value="2024">2024</option>
         <option value="2025">2025</option>
       </select>
-    <button
-      @click="playAll"
-      class="text-5xl cursor-pointer"
-      v-if="teams[selectedYear].length > 0"
-    >
-      💥
-    </button>
+      <button
+        @click="playAll"
+        class="text-5xl cursor-pointer"
+        v-if="teams[selectedYear].length > 0"
+      >
+        💥
+      </button>
     </div>
 
     <p
@@ -166,6 +166,11 @@ const teams = {
   ],
   2025: [
     {
+      name: "Boomers :-)",
+      sound: "Boomers :-).mp3",
+      notes: "",
+    },
+    {
       name: "KuK Hofhackerei",
       sound: "KuK Hofhackerei.mp3",
       notes: "",
@@ -179,7 +184,12 @@ const teams = {
       name: "Holzhelm",
       sound: "holzhelm.mp3",
       notes: "",
-    }
+    },
+    {
+      name: "movaps [rsp+50h],xmm0",
+      sound: "movaps [rsp+50h],xmm0.mp3",
+      notes: "",
+    },
   ],
 };
 
