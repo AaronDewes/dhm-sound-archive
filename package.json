@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
     "nuxt": "^3.17.4",
+    "nuxt-posthog": "^1.6.3",
     "vue": "latest"
   }
 }
