@@ -176,6 +176,11 @@ const teams = {
       notes: "",
     },
     {
+      name: "ICE 1337",
+      sound: "ICE 1337.wav",
+      notes: "",
+    },
+    {
       name: ":(){ :|:& };:",
       sound: ":(){ :|:& };:.mp3",
       notes: "",
