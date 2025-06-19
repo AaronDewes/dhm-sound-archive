@@ -57,7 +57,19 @@
           :title="team.name"
           :id="`audio-${team.name}`"
         ></audio>
+
+        <div
+          class="my-auto text-center mb-2 md:mb-0 md:my-0 md:w-[25vw] py-auto"
+          v-if="team.name == 'ICE 1337'"
+        >
+          <input
+            type="checkbox"
+            id="train-on-time"
+            v-model="isTrainOnTime"
+          /><label for="train-on-time" class="ml-2">Pünktlich</label>
+        </div>
         <p
+          v-else
           v-html="team.notes"
           class="my-auto text-center mb-2 md:mb-0 md:my-0 md:w-[25vw] py-auto"
         ></p>
@@ -90,7 +102,7 @@ const isTrainOnTime = ref(false);
 
 onMounted(() => {
   isTrainOnTime.value = Math.random() > 0.75;
-})
+});
 
 const teams = computed(() => ({
   2024: [
