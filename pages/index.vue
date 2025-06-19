@@ -86,8 +86,13 @@
 
 <script setup lang="ts">
 const selectedYear = ref<2024 | 2025>(2025);
+const isTrainOnTime = ref(false);
 
-const teams = {
+onMounted(() => {
+  isTrainOnTime.value = Math.random() > 0.75;
+})
+
+const teams = computed(() => ({
   2024: [
     {
       name: "CornFlags",
@@ -177,12 +182,17 @@ const teams = {
     },
     {
       name: "ICE 1337",
-      sound: "ICE 1337.wav",
+      sound: isTrainOnTime.value ? "ICE 1337.wav" : "ICE 1337_delayed.mp3",
       notes: "",
     },
     {
       name: "中国「DOS」联盟",
       sound: "中国「DOS」联盟.mp3",
+      notes: "",
+    },
+    {
+      name: "Urform Verschmutzer",
+      sound: "Urform Verschmutzer.mp3",
       notes: "",
     },
     {
@@ -201,10 +211,10 @@ const teams = {
       notes: "",
     },
   ],
-};
+}));
 
 function playAll() {
-  teams[selectedYear.value].forEach((team) => {
+  teams.value[selectedYear.value].forEach((team) => {
     const audio = document.getElementById(
       `audio-${team.name}`
     ) as HTMLAudioElement;
