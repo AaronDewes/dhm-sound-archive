@@ -166,13 +166,13 @@ const teams = {
   ],
   2025: [
     {
-      name: "Boomers :-)",
-      sound: "Boomers :-).mp3",
+      name: "KuK Hofhackerei",
+      sound: "KuK Hofhackerei.mp3",
       notes: "",
     },
     {
-      name: "KuK Hofhackerei",
-      sound: "KuK Hofhackerei.mp3",
+      name: "Boomers :-)",
+      sound: "Boomers :-).mp3",
       notes: "",
     },
     {
