@@ -181,6 +181,11 @@ const teams = {
       notes: "",
     },
     {
+      name: "中国「DOS」联盟",
+      sound: "中国「DOS」联盟.mp3",
+      notes: "",
+    },
+    {
       name: ":(){ :|:& };:",
       sound: ":(){ :|:& };:.mp3",
       notes: "",
