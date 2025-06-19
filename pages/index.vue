@@ -85,7 +85,7 @@
 </template>
 
 <script setup lang="ts">
-const selectedYear = ref<2024 | 2025>(2024);
+const selectedYear = ref<2024 | 2025>(2025);
 
 const teams = {
   2024: [
