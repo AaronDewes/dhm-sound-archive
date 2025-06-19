@@ -7,7 +7,7 @@
 
       <select
         v-model="selectedYear"
-        class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl py-2 px-4 mx-4 my-4 hidden"
+        class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl py-2 px-4 mx-4 my-4"
       >
         <option value="2024">2024</option>
         <option value="2025">2025</option>
@@ -165,6 +165,11 @@ const teams = {
     },
   ],
   2025: [
+    {
+      name: "KuK Hofhackerei",
+      sound: "KuK Hofhackerei.mp3",
+      notes: "",
+    },
     {
       name: ":(){ :|:& };:",
       sound: ":(){ :|:& };:.mp3",
