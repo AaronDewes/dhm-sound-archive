@@ -193,7 +193,7 @@ const teams = {
     {
       name: "Holzhelm",
       sound: "holzhelm.mp3",
-      notes: "",
+      notes: "Wirkt heavily inspired by movaps [rsp+50h],xmm0",
     },
     {
       name: "movaps [rsp+50h],xmm0",
