@@ -101,7 +101,7 @@ const selectedYear = ref<2024 | 2025>(2025);
 const isTrainOnTime = ref(false);
 
 onMounted(() => {
-  isTrainOnTime.value = Math.random() > 0.75;
+  isTrainOnTime.value = Math.random() > 0.5;
 });
 
 const teams = computed(() => ({
