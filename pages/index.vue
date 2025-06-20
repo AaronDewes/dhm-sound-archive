@@ -218,10 +218,14 @@ const teams = computed(() => ({
       notes: "Wirkt heavily inspired by movaps [rsp+50h],xmm0",
     },
     {
+      name: "🏴",
+      sound: "🏴.mp3"
+    },
+    {
       name: "movaps [rsp+50h],xmm0",
       sound: "movaps [rsp+50h],xmm0.mp3",
       notes: "",
-    },
+    }
   ],
 }));
 
