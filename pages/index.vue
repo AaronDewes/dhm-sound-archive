@@ -79,7 +79,7 @@
         v-else
         class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4 text-center"
       >
-        Coming <strikethrough>soon</strikethrough> at some point in the future.
+        Coming <s>soon</s> at some point in the future.
       </div>
     </div>
 
