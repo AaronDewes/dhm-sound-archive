@@ -218,6 +218,11 @@ const teams = computed(() => ({
       notes: "",
     },
     {
+      name: "Himalaya",
+      sound: "Himalaya.mp3",
+      notes: "",
+    },
+    {
       name: "Holzhelm",
       sound: "holzhelm.mp3",
       notes: "Wirkt heavily inspired by movaps [rsp+50h],xmm0",
@@ -230,7 +235,11 @@ const teams = computed(() => ({
       name: "movaps [rsp+50h],xmm0",
       sound: "movaps [rsp+50h],xmm0.mp3",
       notes: "",
-    }
+    },
+    {
+      name: "KITCTF",
+      sound: "KITCTF.mp3"
+    },
   ],
 }));
 
