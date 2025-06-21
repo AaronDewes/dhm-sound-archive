@@ -11,6 +11,7 @@
       >
         <option value="2024">2024</option>
         <option value="2025">2025</option>
+        <option value="2026">2026</option>
       </select>
       <button
         @click="playAll"
@@ -78,7 +79,7 @@
         v-else
         class="border-[3px] border-gray-700 dark:border-gray-300 rounded-2xl p-3 mx-4 text-center"
       >
-        Coming soon!
+        Coming <strikethrough>soon</strikethrough> at some point in the future.
       </div>
     </div>
 
@@ -97,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-const selectedYear = ref<2024 | 2025>(2025);
+const selectedYear = ref<2024 | 2025 | 2026>(2025);
 const isTrainOnTime = ref(false);
 
 onMounted(() => {
@@ -241,6 +242,7 @@ const teams = computed(() => ({
       sound: "KITCTF.mp3"
     },
   ],
+  2026: [],
 }));
 
 function playAll() {
