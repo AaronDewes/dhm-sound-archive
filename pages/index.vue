@@ -188,6 +188,11 @@ const teams = computed(() => ({
       notes: "",
     },
     {
+      name: "Organizers",
+      sound: "Organizers.mp3",
+      notes: "",
+    },
+    {
       name: "Boomers :-)",
       sound: "Boomers :-).mp3",
       notes: "",
